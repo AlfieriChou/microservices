@@ -1,5 +1,4 @@
 const { router, get } = require('microrouter')
-const hello = require('./app/hello')
-const notfound = require('./app/notfound')
+const app = require('./app')
 
-module.exports = router(get('/hello/:who', hello), get('/*', notfound))
+module.exports = router(get('/hello/:who', app.hello), get('/*', app.notfound))

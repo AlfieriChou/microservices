@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/AlfieriChou/microservices#readme",
   "dependencies": {
+    "app-root-path": "^2.1.0",
     "micro": "^9.3.3",
     "microrouter": "^3.1.3"
   }
