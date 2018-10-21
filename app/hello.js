@@ -1,7 +1,5 @@
 const micro = require('micro')
-const pify = require('pify')
-const morgan = require('morgan')
-const logger = pify(morgan('combined'))
+const logger = require('./logger')
 
 const hello = async (req, res) => {
   await logger(req, res)
