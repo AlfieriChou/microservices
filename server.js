@@ -1,8 +1,9 @@
-const { router, get } = require('microrouter')
+const { router, get, post } = require('microrouter')
 const app = require('./app')
 
 module.exports = router(
-  get('/hello/:who', app.hello),
+  get('/hello', app.hello),
+  post('/email', app.email),
   get('/*', app.notfound)
 )
 
