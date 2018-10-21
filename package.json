@@ -1,0 +1,28 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "description": "Base on micro to develop micro service application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "micro -l tcp://0.0.0.0:${PORT-3000}",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfieriChou/microservices.git"
+  },
+  "keywords": [
+    "microservice",
+    "micro"
+  ],
+  "author": "AlfieriChou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlfieriChou/microservices/issues"
+  },
+  "homepage": "https://github.com/AlfieriChou/microservices#readme",
+  "dependencies": {
+    "micro": "^9.3.3",
+    "microrouter": "^3.1.3"
+  }
+}
